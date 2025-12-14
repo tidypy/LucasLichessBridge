@@ -10,6 +10,8 @@ A UCI-compliant bridge that allows Lucas Chess to play against Lichess bots.
 This project creates a "fake" UCI engine that:
 - Presents itself to Lucas Chess as a normal UCI engine
 - Relays moves to/from Lichess bots via the Lichess API
+
+## USE CASE 
 - Allows you to use Lucas Chess GUI to play against online bots
 
 
