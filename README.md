@@ -13,6 +13,7 @@ This project creates a "fake" UCI engine that:
 
 ## USE CASE 
 - Allows you to use Lucas Chess GUI to play against online bots
+- Benefit from the features of Local Chess GUI; such as a Kibitzer and Local Analysis, or Engine Tutor. 
 
 
 ┌─────────────┐ ┌──────────────┐ ┌─────────────┐
