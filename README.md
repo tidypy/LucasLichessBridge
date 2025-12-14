@@ -17,7 +17,7 @@ This project creates a "fake" UCI engine that:
 
 ┌─────────────┐ ┌──────────────┐ ┌─────────────┐
 │ Lucas Chess │ ◄─UCI─► │ Bridge │ ◄─API─► │ Lichess Bot │
-│ (GUI) │ │ (Python) │ │ (LichessOnline-Bot)│
+│ (GUI) │ │ (Python) │ │ (ChalengeOnline-Bot)   │
 └─────────────┘ └──────────────┘ └─────────────┘
 
 
