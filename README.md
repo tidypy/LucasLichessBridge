@@ -1,7 +1,7 @@
 # LucasLichessBridge
 A python Bridge to utilize Lucas Chess GUI instead of Lichess Browser GUI
 
-# Lucas Lichess Bridge Description 2
+## Lucas Lichess Bridge Description 2
 
 A UCI-compliant bridge that allows Lucas Chess to play against Lichess bots.
 
