@@ -1,6 +1,0 @@
-id name Faux UCI Engine
-id author tidypy
-option name TestOption type string default hello
-option name TestSpin type spin default 5 min 1 max 100
-option name TestCheck type check default false
-option name TestCombo type combo default one var one var two var three

@@ -1,0 +1,11 @@
+id name Lucas Lichess Bridge by tidypy
+id author tidypy
+option name LichessToken type string default
+option name ChallengeColor type combo default Auto var Auto var White var Black
+option name Opponent type string default maia1
+option name TimeMode type combo default Realtime var Realtime var Correspondence
+option name Minutes type spin default 5 min 1 max 180
+option name Increment type spin default 3 min 0 max 180
+option name Rated type check default false
+option name VerifyConnection type button
+option name Resign type button

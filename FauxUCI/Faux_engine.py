@@ -4,10 +4,20 @@ Minimal UCI Engine - Test if Lucas Chess can detect it.
 No imports. No dependencies. Just UCI protocol.
 """
 import sys
+import os
 
 # --- Simple Logging ---
-# No extra imports. Log file appears in the directory where the script is run from.
-LOG_FILE = "faux_engine_log.txt"
+def get_base_path():
+    """ Get the base path, whether running from source or as a PyInstaller bundle. """
+    if getattr(sys, 'frozen', False):
+        # We are running in a bundle, use the executable's directory
+        return os.path.dirname(sys.executable)
+    else:
+        # We are running in a normal Python environment
+        return os.path.dirname(os.path.abspath(__file__))
+
+# Log file will be created next to the executable.
+LOG_FILE = os.path.join(get_base_path(), "faux_engine_log.txt")
 
 def log(message):
     """Appends a message to the log file."""
