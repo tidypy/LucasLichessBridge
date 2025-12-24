@@ -208,7 +208,7 @@ class LichessWorker:
                 if target_id:
                     try:
                         log(f"WORKER: Verifying game {target_id} directly via export...")
-                        game_data = self.client.games.export(target_id, as_json=True)
+                        game_data = self.client.games.export(target_id)
                         if game_data:
                             self.game_id = target_id
                             # 'color' might be in 'players' dict or top level depending on export format
@@ -333,7 +333,7 @@ class LichessWorker:
 
             try:
                 # We use export instead of stream for simpler synchronous polling
-                game_json = self.client.games.export(self.game_id, as_json=True, moves=True)
+                game_json = self.client.games.export(self.game_id, moves=True)
                 moves_str = game_json.get('moves', '')
                 
                 # Reconstruct board from moves to check for progress
